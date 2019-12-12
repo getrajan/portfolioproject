@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -47,14 +48,14 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Rajan Karki</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Rajan Karki</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="#">Facebook</a>
-                    <a class="nav-link" href="#">Resume</a>
+                    <a class="nav-link" href="https://www.facebook.com/profile.php?id=100012767223086">Facebook</a>
+                    <a class="nav-link" href="{%  static 'resume.pdf' %}">Resume</a>
                     <a class="nav-link  active" href="#">Blog</a>
                 </div>
             </div>
