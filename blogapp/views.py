@@ -15,7 +15,7 @@ class BlogCreateView(CreateView):
      
 def home(request):
     blogs=Blog.objects.all
-    return render(request,'blogapp/home.htm',{'blogs':blogs})
+    return render(request,'blogapp/allblogs.htm',{'blogs':blogs})
 
 def detail(request,id):
     blogs=Blog.objects.get(id=id)
