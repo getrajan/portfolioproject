@@ -1,9 +1,12 @@
 
 from django.urls import path
-from .views import home,detail
+from .views import home,detail, BlogCreateView
 
+app_name='blogapp'
 
 urlpatterns = [
    path('',home,name='blog_home'),
-   path('<int:blog_id/>',detail,name='detail'),
+   path('blogapp/<int:id>/',detail,name='detail'),
+   path('create/', BlogCreateView.as_view(), name='blog_create')
+
 ]
