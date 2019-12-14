@@ -26,9 +26,9 @@ SECRET_KEY = '4j5+%!8p!3c47-_o4ofg#y--ehz*0aj1pl0_1h_n#nhohu-00='
 DEBUG = True
 
 ALLOWED_HOSTS =  [
-   'https://damp-fjord-54677.herokuapp.com/',
+   'myportfolio12.herokuapp.com',
    'localhost',
-#    'https://git.heroku.com/damp-fjord-54677.git'
+   #"https://git.heroku.com/myportfolio12.git"
 ]
 
 
@@ -132,3 +132,7 @@ STATICFILES_DIRS=[
 STATIC_URL = '/static/'
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+
+if 'DATABASE_URL' in os.environ:
+    import dj_database_url
+    DATABASES={'default': dj_database_url.config()}
