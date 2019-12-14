@@ -26,7 +26,9 @@ SECRET_KEY = '4j5+%!8p!3c47-_o4ofg#y--ehz*0aj1pl0_1h_n#nhohu-00='
 DEBUG = True
 
 ALLOWED_HOSTS =  [
-    'warm-meadow-21831.herokuapp.com'
+   'https://damp-fjord-54677.herokuapp.com/',
+   'localhost',
+#    'https://git.heroku.com/damp-fjord-54677.git'
 ]
 
 
