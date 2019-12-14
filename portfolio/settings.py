@@ -25,7 +25,9 @@ SECRET_KEY = '4j5+%!8p!3c47-_o4ofg#y--ehz*0aj1pl0_1h_n#nhohu-00='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =  []
+ALLOWED_HOSTS =  [
+    'warm-meadow-21831.herokuapp.com'
+]
 
 
 
